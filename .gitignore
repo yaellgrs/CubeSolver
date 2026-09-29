@@ -1,0 +1,9 @@
+@"
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.vcxproj.user
+"@ | Out-File -Encoding ascii .gitignore

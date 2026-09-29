@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CubeSolver/CubeSolver.vcxproj" Id="b0be32b2-f079-4cc0-922e-d54577ceed5b" />
+</Solution>
