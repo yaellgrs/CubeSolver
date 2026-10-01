@@ -4,14 +4,14 @@
 #include <glm/gtc/quaternion.hpp>
 
 #include <iostream>
-#include "Cube2D.h"
+#include "Cube3D.h"
 #include "ViewerTerminal.h"
 
 
 
 int main()
 {
-    Cube2D cube;
+    Cube3D cube;
     ViewerTerminal view = ViewerTerminal(&cube);
     view.drawCube();
 }

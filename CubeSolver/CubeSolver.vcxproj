@@ -140,11 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cube2D.cpp" />
+    <ClCompile Include="Cube3D.cpp" />
     <ClCompile Include="Cube3D.h" />
     <ClCompile Include="CubeSolver.cpp" />
+    <ClCompile Include="ICube.cpp" />
     <ClCompile Include="ViewerTerminal.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CubeUtility.h" />
     <ClInclude Include="ICube.h" />
     <ClInclude Include="Cube2D.h" />
     <ClInclude Include="IViewer.h" />

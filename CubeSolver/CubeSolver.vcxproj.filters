@@ -19,19 +19,31 @@
     <Filter Include="Fichiers d%27en-tête\Viewers">
       <UniqueIdentifier>{1ab32c1b-c691-42f4-8066-f0abc4a2fc83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Cubes">
+      <UniqueIdentifier>{adef060d-d21a-45d2-97f6-5b7421040bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Viewer">
+      <UniqueIdentifier>{c45a4a79-b3ed-4741-8cf2-e19eb5a2ae15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CubeSolver.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Cube2D.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Cube3D.h">
       <Filter>Fichiers d%27en-tête\Cubes</Filter>
     </ClCompile>
-    <ClCompile Include="ViewerTerminal.cpp">
+    <ClCompile Include="Cube2D.cpp">
+      <Filter>Fichiers sources\Cubes</Filter>
+    </ClCompile>
+    <ClCompile Include="ICube.cpp">
+      <Filter>Fichiers sources\Cubes</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube3D.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewerTerminal.cpp">
+      <Filter>Fichiers sources\Viewer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="ViewerTerminal.h">
       <Filter>Fichiers d%27en-tête\Viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeUtility.h">
+      <Filter>Fichiers d%27en-tête\Cubes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

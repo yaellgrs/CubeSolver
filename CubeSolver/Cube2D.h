@@ -17,9 +17,7 @@ public:
 	}
 
 	virtual CubeColor getSticker(Face face, int row, int col) const override;
-	CubeColor getColor(int piece, int orientation, int face) const;
 	
-private:
-	int getCorner(Face face, int row, int col) const;
+	
 
 };

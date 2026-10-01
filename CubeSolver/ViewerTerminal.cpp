@@ -18,10 +18,11 @@ const char* colorToString(CubeColor color)
 
 void ViewerTerminal::drawCube()
 {
-    for (int row = 0; row < 2; ++row)
+    int n = m_cube->getOrder();
+    for (int row = 0; row < n; ++row)
     {
         std::cout << "      ";
-        for (int col = 0; col < 2; ++col)
+        for (int col = 0; col < n; ++col)
         {
             CubeColor color = this->m_cube->getSticker((Face)5, row, col);
 
@@ -31,38 +32,31 @@ void ViewerTerminal::drawCube()
         std::cout << '\n';
     }
     std::cout << '\n';
-	std::vector<int> faceOrdrer = { 2, 1, 4, 3 };
-    for (int i : faceOrdrer)
-    {
+	std::vector<int> faceOrder = { 2, 1, 4, 3 };
+    for (int row = 0; row < n; row++) {
+        for (int face : faceOrder) 
+        {
 
-            for (int col = 0; col < 2; ++col)
+            for (int col = 0; col < n; ++col)
             {
-                CubeColor color = this->m_cube->getSticker((Face)i, 0, col);
+                CubeColor color = this->m_cube->getSticker((Face)face, row, col);
 
                 std::cout << colorToString(color) << " ";
             }
             std::cout << "  ";
-    }
-    std::cout << '\n';
-    for (int i : faceOrdrer)
-    {
-
-        for (int col = 0; col < 2; ++col)
-        {
-            CubeColor color = this->m_cube->getSticker((Face)i, 1, col);
-
-            std::cout << colorToString(color) << " ";
         }
-        std::cout << "  ";
+        std::cout << '\n';
     }
+
+
     std::cout << '\n';
     std::cout << '\n';
-    for (int row = 0; row < 2; ++row)
+    for (int row = 0; row <n; ++row)
     {
         std::cout << "      ";
-        for (int col = 0; col < 2; ++col)
+        for (int col = 0; col < n; ++col)
         {
-            CubeColor color = this->m_cube->getSticker((Face)1, row, col);
+            CubeColor color = this->m_cube->getSticker((Face)0, row, col);
 
             std::cout << colorToString(color) << " ";
         }
