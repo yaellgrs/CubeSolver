@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Cube\Cube2D.h" />
+    <ClInclude Include="include\Cube\Cube3D.h" />
+    <ClInclude Include="include\Cube\ICube.h" />
+    <ClInclude Include="include\Model\CubeState.h" />
+    <ClInclude Include="include\View\IViewer.h" />
+    <ClInclude Include="include\View\ViewerTerminal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Cube\Cube2D.cpp" />
+    <ClCompile Include="src\Cube\Cube3D.cpp" />
+    <ClCompile Include="src\Cube\ICube.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Modele\CubeState.cpp" />
+    <ClCompile Include="src\View\ViewerTerminal.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -111,6 +127,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\YAEL\Documents\1-programmation\c++\CubeSolver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,21 +155,6 @@
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Cube2D.cpp" />
-    <ClCompile Include="Cube3D.cpp" />
-    <ClCompile Include="Cube3D.h" />
-    <ClCompile Include="CubeSolver.cpp" />
-    <ClCompile Include="ICube.cpp" />
-    <ClCompile Include="ViewerTerminal.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CubeUtility.h" />
-    <ClInclude Include="ICube.h" />
-    <ClInclude Include="Cube2D.h" />
-    <ClInclude Include="IViewer.h" />
-    <ClInclude Include="ViewerTerminal.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

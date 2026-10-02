@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ICube.h"
+#include "Cube/ICube.h"
 
 class IViewer {
 protected:

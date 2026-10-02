@@ -1,4 +1,4 @@
-#include "Cube3D.h"
+#include "Cube/Cube3D.h"
 
 CubeColor Cube3D::getSticker(Face face, int row, int col) const
 {

@@ -1,4 +1,4 @@
-#include "ICube.h"
+#include "Cube/ICube.h"
 
 CubeColor ICube::getColor(int piece, int orientation, int face, std::span<const CubeColor> colors) const
 {

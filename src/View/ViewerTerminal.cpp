@@ -1,4 +1,4 @@
-#include "ViewerTerminal.h"
+#include "View/ViewerTerminal.h"
 
 const char* colorToString(CubeColor color)
 {

@@ -25,42 +25,51 @@
     <Filter Include="Fichiers sources\Viewer">
       <UniqueIdentifier>{c45a4a79-b3ed-4741-8cf2-e19eb5a2ae15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Model">
+      <UniqueIdentifier>{aa1e726f-bd08-4012-b4a5-dbf75517da07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Model">
+      <UniqueIdentifier>{a5b0dd24-b1c5-4887-9e78-6fb9c6066599}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CubeSolver.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Cube3D.h">
+    <ClInclude Include="include\Cube\Cube2D.h">
       <Filter>Fichiers d%27en-tête\Cubes</Filter>
-    </ClCompile>
-    <ClCompile Include="Cube2D.cpp">
+    </ClInclude>
+    <ClInclude Include="include\Cube\Cube3D.h">
+      <Filter>Fichiers d%27en-tête\Cubes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cube\ICube.h">
+      <Filter>Fichiers d%27en-tête\Cubes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Model\CubeState.h">
+      <Filter>Fichiers d%27en-tête\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\View\IViewer.h">
+      <Filter>Fichiers d%27en-tête\Viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\View\ViewerTerminal.h">
+      <Filter>Fichiers d%27en-tête\Viewers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Cube\Cube2D.cpp">
       <Filter>Fichiers sources\Cubes</Filter>
     </ClCompile>
-    <ClCompile Include="ICube.cpp">
+    <ClCompile Include="src\Cube\Cube3D.cpp">
       <Filter>Fichiers sources\Cubes</Filter>
     </ClCompile>
-    <ClCompile Include="Cube3D.cpp">
+    <ClCompile Include="src\Cube\ICube.cpp">
+      <Filter>Fichiers sources\Cubes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Modele\CubeState.cpp">
+      <Filter>Fichiers sources\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="ViewerTerminal.cpp">
+    <ClCompile Include="src\View\ViewerTerminal.cpp">
       <Filter>Fichiers sources\Viewer</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ICube.h">
-      <Filter>Fichiers d%27en-tête\Cubes</Filter>
-    </ClInclude>
-    <ClInclude Include="Cube2D.h">
-      <Filter>Fichiers d%27en-tête\Cubes</Filter>
-    </ClInclude>
-    <ClInclude Include="IViewer.h">
-      <Filter>Fichiers d%27en-tête\Viewers</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewerTerminal.h">
-      <Filter>Fichiers d%27en-tête\Viewers</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeUtility.h">
-      <Filter>Fichiers d%27en-tête\Cubes</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
