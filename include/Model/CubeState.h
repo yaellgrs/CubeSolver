@@ -5,16 +5,9 @@
 #include <vector>
 #include <map>
 #include <array>
+#include "Mouvement.hpp"
 
-enum Mouvement {U, U2, U_PRIME, D, D2, D_PRIME, B, B2, B_PRIME, L, L2, L_PRIME, R, R2, R_PRIME};
-//u -> up
-//d -> down
-//b -> back
-//r -> right
-//l -> left
 
-//"..."_PRIME -> sens anti horaire
-//"..."2 -> 2 tour horaire
 
 struct MoveDefinition {
     std::array<int, 12> edge_perm;
@@ -27,7 +20,8 @@ class CubeState{
     public :
     //arrete
     std::array<int, 12> permutation_arrete{};
-    //[UF -> blanc/bleu, UR, UB, UL, FR -> BLEU/orange, BR -> ORANGE / vert, FL, BL, DF -> bleu jaune, DR, DB, DL]
+    //Avec la face bleu devant
+    //[UF=0, UR=1, UB=2, UL=3 , FL= 4, FR = 5, BR = 6, BL = 7, DF = 8, DR = 9, DB = 10, DL = 11]
     std::array<int, 12> rotation_arrete{};
 
     //corner
