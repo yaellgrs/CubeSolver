@@ -5,6 +5,7 @@
 #include <map>
 #include <array>
 #include <span>
+#include <cassert> 
 #include "CubeUtility.h"
 
 class ICube {

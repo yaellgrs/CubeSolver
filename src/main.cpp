@@ -26,8 +26,9 @@ int main()
     view.drawCube();
 
     Cube3D cube2;
-    cube2.setFromState(resolu.applyMove(U));
+    cube2.setFromState(resolu.applyMove(U2));
     ViewerTerminal view2 = ViewerTerminal(&cube2);
     view2.drawCube();
+
 }
 

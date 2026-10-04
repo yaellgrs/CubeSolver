@@ -1,4 +1,5 @@
 #pragma once
+#include <array>
 
 /*     GENERAL     */
 
@@ -23,6 +24,8 @@ inline const std::array<std::array<CubeColor, 3>, 8> cornerColors =
     { CubeColor::White,  CubeColor::Blue,   CubeColor::Orange },
     { CubeColor::White,  CubeColor::Red,    CubeColor::Blue   }
 } };
+
+
 
 
 

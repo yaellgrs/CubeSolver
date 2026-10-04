@@ -32,10 +32,10 @@ int ICube::getCorner(Face face, int row, int col) const
 
 	switch ((Face)face) {
 	case Face::U:
-		if (row == 0 && col == 0) return Corners::ULF;
-		if (row == 0 && col == i) return Corners::UFR;
-		if (row == i && col == 0) return Corners::UBL;
-		if (row == i && col == i) return Corners::URB;
+		if (row == 0 && col == 0) return Corners::UBL;
+		if (row == 0 && col == i) return Corners::URB;
+		if (row == i && col == 0) return Corners::ULF;
+		if (row == i && col == i) return Corners::UFR;
 		break;
 	case Face::D:
 		if (row == 0 && col == 0) return Corners::DLF;

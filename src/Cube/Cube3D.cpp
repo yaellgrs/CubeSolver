@@ -7,8 +7,10 @@ CubeColor Cube3D::getSticker(Face face, int row, int col) const
 		int piece = this->m_cornerPermutation[corner];//5
 		int orientation = this->m_cornerOrientation[corner];//0
 
+		int k = 0;
+		while((Face)cornerColors[corner][k] != face) k++;
 
-		return getColor(piece, orientation, (int)face, cornerColors[piece]);
+		return cornerColors[piece][(k - orientation + 3) % 3];
 	}
 	else if (row == 1 && col == 1) {//center
 		return (CubeColor)face;
@@ -17,7 +19,11 @@ CubeColor Cube3D::getSticker(Face face, int row, int col) const
 		int edge = getEdge(face, row, col);//ULF
 		int piece = this->m_edgePermutation[edge];//5
 		int orientation = this->m_edgeOrientation[edge];//0
-		return getColor(piece, orientation, (int)face, edgeColors[piece]);
+
+		int k = 0;
+		while((Face)edgeColors[edge][k] != face) k++;
+		
+		return edgeColors[piece][(k - orientation + 2) % 2];
 	}
 
 	
@@ -43,10 +49,10 @@ int Cube3D::getEdge(Face face, int row, int col) const
 		if (row == 2 && col == 1) return Edges::UF;
 		break;
 	case Face::D:
-		if (row == 0 && col == 1) return Edges::DB;
+		if (row == 0 && col == 1) return Edges::DF;
 		if (row == 1 && col == 0) return Edges::DL;
 		if (row == 1 && col == 2) return Edges::DR;
-		if (row == 2 && col == 1) return Edges::DF;
+		if (row == 2 && col == 1) return Edges::DB;
 		break;
 	case Face::F:
 		if (row == 0 && col == 1) return Edges::UF;

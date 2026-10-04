@@ -18,6 +18,7 @@ const char* colorToString(CubeColor color)
 
 void ViewerTerminal::drawCube()
 {
+
     int n = m_cube->getOrder();
     for (int row = 0; row < n; ++row)
     {
@@ -62,5 +63,6 @@ void ViewerTerminal::drawCube()
         }
         std::cout << '\n';
     }
+    std::cout << "\n";
 }
 
