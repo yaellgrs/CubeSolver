@@ -25,10 +25,8 @@ struct MoveDefinition {
     std::array<int, 8> corner_orientation_delta;
 };
 
-inline std::array<MoveDefinition, 18> moveTable = {};
+std::array<MoveDefinition, 18> buildMoveTable();
 
-
-void initMoveTable();
-
+const std::array<MoveDefinition, 18>& getMoveTable();
 
 #endif

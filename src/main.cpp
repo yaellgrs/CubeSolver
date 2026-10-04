@@ -4,7 +4,7 @@
 #include <glm/gtc/quaternion.hpp>
 
 #include <iostream>
-#include "Cube/Cube3D.h";
+#include "Cube/Cube3D.h"
 #include "View/ViewerTerminal.h"
 
 
