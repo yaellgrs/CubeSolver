@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ICube.h"
+#include "CubeState.h"
 
 
 class Cube3D : public ICube {
@@ -22,6 +23,8 @@ public:
 		}
 	}
 	virtual CubeColor getSticker(Face face, int row, int col) const override;
+
+	void setFromState(const CubeState& state);
 
 private:
 	bool isCorner(int row, int col) const;

@@ -11,8 +11,23 @@
 
 int main()
 {
+
+    CubeState resolu(
+        {0,1,2,3,4,5,6,7,8,9,10,11},
+        {0,0,0,0,0,0,0,0,0,0,0,0},
+        {0,1,2,3,4,5,6,7},
+        {0,0,0,0,0,0,0,0}
+    );
+
     Cube3D cube;
+    cube.setFromState(resolu);
+
     ViewerTerminal view = ViewerTerminal(&cube);
     view.drawCube();
+
+    Cube3D cube2;
+    cube2.setFromState(resolu.applyMove(U));
+    ViewerTerminal view2 = ViewerTerminal(&cube2);
+    view2.drawCube();
 }
 

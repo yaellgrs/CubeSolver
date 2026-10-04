@@ -25,6 +25,7 @@ CubeColor Cube3D::getSticker(Face face, int row, int col) const
 }
 
 
+
 bool Cube3D::isCorner(int row, int col) const
 {
 	if ((row == 0 && col == 0) || (row == 0 && col == 2)) return true;
@@ -74,3 +75,15 @@ int Cube3D::getEdge(Face face, int row, int col) const
 	}
 	return 0;
 }
+
+
+void Cube3D::setFromState(const CubeState& state) {
+        for (int i = 0; i < 12; ++i) {
+            m_edgePermutation[i] = state.permutation_arrete[i];
+            m_edgeOrientation[i] = state.rotation_arrete[i];
+        }
+        for (int i = 0; i < 8; ++i) {
+            m_cornerPermutation[i] = state.permutation_corner[i];
+            m_cornerOrientation[i] = state.rotation_corner[i];
+        }
+    }

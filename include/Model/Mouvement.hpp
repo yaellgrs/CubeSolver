@@ -1,8 +1,6 @@
 #ifndef Mouvement_H
 #define Mouvement_H
 
-#include "CubeState.h"
-
 #include <iostream>
 #include <vector>
 #include <map>

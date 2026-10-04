@@ -7,15 +7,6 @@
 #include <array>
 #include "Mouvement.hpp"
 
-
-
-struct MoveDefinition {
-    std::array<int, 12> edge_perm;
-    std::array<int, 12> edge_orientation_delta;
-    std::array<int, 8> corner_perm;
-    std::array<int, 8> corner_orientation_delta;
-};
-
 class CubeState{
     public :
     //arrete
