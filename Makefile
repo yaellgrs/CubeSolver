@@ -5,7 +5,8 @@ TARGET = cube_solver
 SRC = $(wildcard src/*.cpp) \
 	$(wildcard src/Cube/*.cpp) \
 	$(wildcard src/Modele/*.cpp) \
-	$(wildcard src/View/*.cpp)
+	$(wildcard src/View/*.cpp) \
+	$(wildcard src/Utility/*.cpp)
 
 .PHONY: all run clean
 
@@ -19,3 +20,4 @@ run: $(TARGET)
 
 clean:
 	rm -f $(TARGET)
+
