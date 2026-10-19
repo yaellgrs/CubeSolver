@@ -32,7 +32,11 @@ public:
         centralwidget->setObjectName("centralwidget");
         Cube = new QGraphicsView(centralwidget);
         Cube->setObjectName("Cube");
-        Cube->setGeometry(QRect(20, 20, 1331, 651));
+        Cube->setGeometry(QRect(20, 20, 1421, 711));
+        Cube->setAutoFillBackground(false);
+        QBrush brush(QColor(119, 118, 123, 255));
+        brush.setStyle(Qt::SolidPattern);
+        Cube->setBackgroundBrush(brush);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);

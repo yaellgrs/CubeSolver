@@ -180,30 +180,6 @@ cube_solver_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/cube_solver_autogen/mocs_compilation.cpp.s
 .PHONY : cube_solver_autogen/mocs_compilation.cpp.s
 
-include/View/qt/viewerqt.o: include/View/qt/viewerqt.cpp.o
-.PHONY : include/View/qt/viewerqt.o
-
-# target to build an object file
-include/View/qt/viewerqt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.o
-.PHONY : include/View/qt/viewerqt.cpp.o
-
-include/View/qt/viewerqt.i: include/View/qt/viewerqt.cpp.i
-.PHONY : include/View/qt/viewerqt.i
-
-# target to preprocess a source file
-include/View/qt/viewerqt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.i
-.PHONY : include/View/qt/viewerqt.cpp.i
-
-include/View/qt/viewerqt.s: include/View/qt/viewerqt.cpp.s
-.PHONY : include/View/qt/viewerqt.s
-
-# target to generate assembly for a file
-include/View/qt/viewerqt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.s
-.PHONY : include/View/qt/viewerqt.cpp.s
-
 src/Cube/Cube2D.o: src/Cube/Cube2D.cpp.o
 .PHONY : src/Cube/Cube2D.o
 
@@ -434,9 +410,6 @@ help:
 	@echo "... cube_solver_autogen/mocs_compilation.o"
 	@echo "... cube_solver_autogen/mocs_compilation.i"
 	@echo "... cube_solver_autogen/mocs_compilation.s"
-	@echo "... include/View/qt/viewerqt.o"
-	@echo "... include/View/qt/viewerqt.i"
-	@echo "... include/View/qt/viewerqt.s"
 	@echo "... src/Cube/Cube2D.o"
 	@echo "... src/Cube/Cube2D.i"
 	@echo "... src/Cube/Cube2D.s"

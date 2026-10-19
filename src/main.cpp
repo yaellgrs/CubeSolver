@@ -21,9 +21,12 @@
 
 int main(int argc, char** argv)
 {
-    Cube3D cube;
-    ViewerQT* view = new ViewerQT(argc, argv, &cube);
-    view->Run();
+
+    QApplication app(argc, argv);
+    MainWindow w;
+    w.showMaximized();
+    return app.exec();
+
 }
 
 void testCube(){

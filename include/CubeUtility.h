@@ -1,5 +1,6 @@
 #pragma once
 #include <array>
+#include <QPainter>
 
 /*     GENERAL     */
 
@@ -50,3 +51,17 @@ inline const std::array<std::array<CubeColor, 2>, 12> edgeColors =
     { CubeColor::Orange, CubeColor::Green  }, 
     { CubeColor::Orange, CubeColor::Blue   }  
 } };
+
+/* QT */
+
+static QColor toQColor(CubeColor c) {
+    switch (c) {
+    case CubeColor::White:  return Qt::white;
+    case CubeColor::Yellow: return Qt::yellow;
+    case CubeColor::Green:  return Qt::green;
+    case CubeColor::Blue:   return Qt::blue;
+    case CubeColor::Red:    return Qt::red;
+    case CubeColor::Orange: return QColor(255, 140, 0);
+    }
+    return Qt::gray;
+}

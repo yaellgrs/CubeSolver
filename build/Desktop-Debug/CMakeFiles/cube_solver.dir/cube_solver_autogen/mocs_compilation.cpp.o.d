@@ -441,4 +441,19 @@ CMakeFiles/cube_solver.dir/cube_solver_autogen/mocs_compilation.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/CubeState.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/Mouvement.hpp \
+  /home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube3D.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Cube/ICube.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cassert \
+  /home/nzo/Dev/cpp/CubeSolver/include/CubeUtility.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h

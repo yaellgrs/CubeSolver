@@ -458,4 +458,10 @@ CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h

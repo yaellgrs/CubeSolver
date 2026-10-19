@@ -2,25 +2,36 @@
 
 #include "ICube.h"
 #include "Model/CubeState.h"
+#include "Model/CubeState.h"
 
 
 class Cube3D : public ICube {
 private:
-	//corners
-	std::array<int, 8> m_cornerOrientation{};//0 a 2
-	std::array<int, 8> m_cornerPermutation;//(0->ordre^3 - 1 ),(0->ordre^3 - 1) 
 
-	//edges
-	std::array<int, 12> m_edgeOrientation{ };//0 a 2
-	std::array<int, 12> m_edgePermutation;//(0->ordre^3 - 1 ),(0->ordre^3 - 1)  
+    // //corners
+    // std::array<int, 8> m_cornerOrientation{};//0 a 2
+    // std::array<int, 8> m_cornerPermutation;//(0->ordre^3 - 1 ),(0->ordre^3 - 1)
+
+    // //edges
+    // std::array<int, 12> m_edgeOrientation{ };//0 a 2
+    // std::array<int, 12> m_edgePermutation;//(0->ordre^3 - 1 ),(0->ordre^3 - 1)
+public:
+    CubeState* state;
+
 public:
 	Cube3D() : ICube(3) {
-		for (int i = 0; i < 8; i++) {
-			m_cornerPermutation[i] = i;
-		}
-		for (int i = 0; i < 12; i++) {
-			m_edgePermutation[i] = i;
-		}
+        state = new CubeState(
+            {0,1,2,3,4,5,6,7,8,9,10,11},
+            {0,0,0,0,0,0,0,0,0,0,0,0},
+            {0,1,2,3,4,5,6,7},
+            {0,0,0,0,0,0,0,0}
+            );
+        // for (int i = 0; i < 8; i++) {
+        // 	m_cornerPermutation[i] = i;
+        // }
+        // for (int i = 0; i < 12; i++) {
+        // 	m_edgePermutation[i] = i;
+        // }
 	}
 	virtual CubeColor getSticker(Face face, int row, int col) const override;
 

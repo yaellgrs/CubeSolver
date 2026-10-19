@@ -445,6 +445,14 @@ CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cassert \
   /home/nzo/Dev/cpp/CubeSolver/include/CubeUtility.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
   /home/nzo/Dev/cpp/CubeSolver/include/View/qt/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
@@ -453,9 +461,12 @@ CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/CubeState.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/Mouvement.hpp \
+  /home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube3D.h

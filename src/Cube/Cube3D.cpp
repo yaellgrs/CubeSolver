@@ -4,8 +4,8 @@ CubeColor Cube3D::getSticker(Face face, int row, int col) const
 {
 	if(isCorner(row, col)){
 		int corner = getCorner(face, row, col);//ULF
-		int piece = this->m_cornerPermutation[corner];//5
-		int orientation = this->m_cornerOrientation[corner];//0
+        int piece = this->state->permutation_corner[corner];//5
+        int orientation = this->state->rotation_corner[corner];//0
 
 		int k = 0;
 		while((Face)cornerColors[corner][k] != face) k++;
@@ -17,8 +17,8 @@ CubeColor Cube3D::getSticker(Face face, int row, int col) const
 	}
 	else {//edges
 		int edge = getEdge(face, row, col);//ULF
-		int piece = this->m_edgePermutation[edge];//5
-		int orientation = this->m_edgeOrientation[edge];//0
+        int piece = this->state->permutation_arrete[edge];//5
+        int orientation = this->state->rotation_arrete[edge];//0
 
 		int k = 0;
 		while((Face)edgeColors[edge][k] != face) k++;
@@ -85,11 +85,11 @@ int Cube3D::getEdge(Face face, int row, int col) const
 
 void Cube3D::setFromState(const CubeState& state) {
         for (int i = 0; i < 12; ++i) {
-            m_edgePermutation[i] = state.permutation_arrete[i];
-            m_edgeOrientation[i] = state.rotation_arrete[i];
+            this->state->permutation_arrete[i] = state.permutation_arrete[i];
+            this->state->rotation_arrete[i] = state.rotation_arrete[i];
         }
         for (int i = 0; i < 8; ++i) {
-            m_cornerPermutation[i] = state.permutation_corner[i];
-            m_cornerOrientation[i] = state.rotation_corner[i];
+            this->state->permutation_corner[i] = state.permutation_corner[i];
+            this->state->rotation_corner[i] = state.rotation_corner[i];
         }
     }

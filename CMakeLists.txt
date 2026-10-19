@@ -14,7 +14,7 @@ file(GLOB_RECURSE HDR CONFIGURE_DEPENDS include/*.h include/*.hpp)
 file(GLOB_RECURSE UI  CONFIGURE_DEPENDS include/*.ui src/*.ui)
 
 add_executable(cube_solver ${SRC} ${HDR} ${UI}
-    include/View/qt/viewerqt.h include/View/qt/viewerqt.cpp)
+    src/View/qt/viewerqt.cpp)
 set_target_properties(cube_solver PROPERTIES
     AUTOUIC_SEARCH_PATHS "${CMAKE_SOURCE_DIR}/include/View/qt")
 target_include_directories(cube_solver PRIVATE include)

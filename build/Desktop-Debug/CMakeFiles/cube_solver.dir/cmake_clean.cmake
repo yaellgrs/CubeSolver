@@ -4,8 +4,6 @@ file(REMOVE_RECURSE
   "cube_solver_autogen"
   "CMakeFiles/cube_solver.dir/cube_solver_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/cube_solver.dir/cube_solver_autogen/mocs_compilation.cpp.o.d"
-  "CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.o"
-  "CMakeFiles/cube_solver.dir/include/View/qt/viewerqt.cpp.o.d"
   "CMakeFiles/cube_solver.dir/src/Cube/Cube2D.cpp.o"
   "CMakeFiles/cube_solver.dir/src/Cube/Cube2D.cpp.o.d"
   "CMakeFiles/cube_solver.dir/src/Cube/Cube3D.cpp.o"

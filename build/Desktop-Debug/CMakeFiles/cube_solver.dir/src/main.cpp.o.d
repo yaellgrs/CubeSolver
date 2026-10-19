@@ -709,11 +709,19 @@ CMakeFiles/cube_solver.dir/src/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/CubeState.h \
+  /home/nzo/Dev/cpp/CubeSolver/include/Model/Mouvement.hpp \
   /home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube3D.h \
   /home/nzo/Dev/cpp/CubeSolver/include/Cube/ICube.h \
   /home/nzo/Dev/cpp/CubeSolver/include/CubeUtility.h \
-  /home/nzo/Dev/cpp/CubeSolver/include/Model/CubeState.h \
-  /home/nzo/Dev/cpp/CubeSolver/include/Model/Mouvement.hpp \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /home/nzo/Dev/cpp/CubeSolver/include/View/terminal/ViewerTerminal.h \
   /home/nzo/Dev/cpp/CubeSolver/include/View/IViewer.h \
   /home/nzo/Dev/cpp/CubeSolver/include/Setting.h \

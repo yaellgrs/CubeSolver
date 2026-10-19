@@ -311,11 +311,6 @@
 	"SETTINGS_FILE" : "/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/cube_solver_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/nzo/Dev/cpp/CubeSolver/include/View/qt/viewerqt.cpp",
-			"MU",
-			null
-		],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube2D.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube3D.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp", "MU", null ],

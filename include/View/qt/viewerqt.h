@@ -2,6 +2,7 @@
 #define VIEWERQT_H
 
 #include <QApplication>
+
 #include "View/IViewer.h"
 #include "View/qt/mainwindow.h"
 
@@ -17,12 +18,16 @@ public:
         this->window = new MainWindow();
         this->window->show();
         this->window->showMaximized();
+
+
     }
 
     void Run();
     void Close();
 
     virtual void drawCube() override;
+private:
+    void DrawFace(int face, int xGap, int yGap);
 
 
 };

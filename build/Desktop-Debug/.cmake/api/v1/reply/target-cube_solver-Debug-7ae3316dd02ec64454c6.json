@@ -282,7 +282,7 @@
 				6,
 				7,
 				8,
-				21
+				9
 			]
 		}
 	],
@@ -359,14 +359,13 @@
 				6,
 				7,
 				8,
-				21
+				9
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				9,
 				10,
 				11,
 				12,
@@ -377,6 +376,7 @@
 				17,
 				18,
 				19,
+				20,
 				22
 			]
 		},
@@ -384,7 +384,7 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				20,
+				21,
 				23
 			]
 		},
@@ -439,6 +439,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/View/qt/mainwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/View/qt/viewerqt.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -512,12 +518,6 @@
 			"backtrace" : 1,
 			"path" : "src/View/qt/mainwindow.ui",
 			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "include/View/qt/viewerqt.cpp",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

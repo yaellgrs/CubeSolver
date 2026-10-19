@@ -19,9 +19,21 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>1331</width>
-      <height>651</height>
+      <width>1421</width>
+      <height>711</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="backgroundBrush">
+     <brush brushstyle="SolidPattern">
+      <color alpha="255">
+       <red>119</red>
+       <green>118</green>
+       <blue>123</blue>
+      </color>
+     </brush>
     </property>
    </widget>
   </widget>
