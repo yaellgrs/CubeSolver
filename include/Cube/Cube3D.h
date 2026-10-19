@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ICube.h"
-#include "CubeState.h"
+#include "Model/CubeState.h"
 
 
 class Cube3D : public ICube {

@@ -4,14 +4,29 @@
 #include <glm/gtc/quaternion.hpp>
 
 #include <iostream>
+
+#include <QApplication>
+
+#include "View/qt/mainwindow.h"
+
+
 #include "Cube/Cube3D.h"
-#include "View/ViewerTerminal.h"
+#include "View/terminal/ViewerTerminal.h"
+
+#include "Setting.h"
+#include "View/qt/viewerqt.h"
 
 
 
-int main()
+
+int main(int argc, char** argv)
 {
+    Cube3D cube;
+    ViewerQT* view = new ViewerQT(argc, argv, &cube);
+    view->Run();
+}
 
+void testCube(){
     CubeState resolu(
         {0,1,2,3,4,5,6,7,8,9,10,11},
         {0,0,0,0,0,0,0,0,0,0,0,0},
@@ -29,6 +44,5 @@ int main()
     cube2.setFromState(resolu.applyMove(U2));
     ViewerTerminal view2 = ViewerTerminal(&cube2);
     view2.drawCube();
-
 }
 

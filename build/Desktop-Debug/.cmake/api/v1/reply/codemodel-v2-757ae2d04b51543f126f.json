@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CubeSolver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cube_solver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cube_solver-Debug-76a7dd173d8189d7b718.json",
+					"name" : "cube_solver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cube_solver_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cube_solver_autogen-Debug-2b256b37c3fe8587a54c.json",
+					"name" : "cube_solver_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cube_solver_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cube_solver_autogen_timestamp_deps-Debug-f1cd4d0ecbf23e98b631.json",
+					"name" : "cube_solver_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug",
+		"source" : "/home/nzo/Dev/cpp/CubeSolver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

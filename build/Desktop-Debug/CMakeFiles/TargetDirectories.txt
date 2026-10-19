@@ -1,0 +1,5 @@
+/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/cube_solver.dir
+/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/cube_solver_autogen_timestamp_deps.dir
+/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles/cube_solver_autogen.dir

@@ -1,21 +1,15 @@
-CXX = g++
-CXXFLAGS = -std=c++20 -Wall -Wextra -Iinclude -Iinclude/Cube -Iinclude/Model -Iinclude/View
-TARGET = cube_solver
+cmake_minimum_required(VERSION 3.16)
+project(CubeSolver LANGUAGES CXX)
 
-SRC = $(wildcard src/*.cpp) \
-	$(wildcard src/Cube/*.cpp) \
-	$(wildcard src/Modele/*.cpp) \
-	$(wildcard src/View/*.cpp)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
 
-.PHONY: all run clean
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-all: $(TARGET)
+file(GLOB_RECURSE SRC CONFIGURE_DEPENDS src/*.cpp)
 
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
-
-run: $(TARGET)
-	./$(TARGET)
-
-clean:
-	rm -f $(TARGET)
+add_executable(cube_solver ${SRC})
+target_include_directories(cube_solver PRIVATE include)
+target_link_libraries(cube_solver PRIVATE Qt6::Widgets)
+target_compile_options(cube_solver PRIVATE -Wall -Wextra
