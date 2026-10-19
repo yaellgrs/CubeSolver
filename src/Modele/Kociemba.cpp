@@ -88,6 +88,13 @@ std::array<int,12> coord_flip(int code) {
 
 }
 
+std::array<int , 4> slice(int code) {
+    std::array<int, 4> resultat = {};
+    for (int k = 4; k >= 1; k--) {
+        
+    }
+}
+
 
 
 

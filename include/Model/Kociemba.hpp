@@ -14,6 +14,8 @@ int slice(CubeState* cubeState);
 std::array<int,8> coord_twist(int code);
 //Decode la rotaion des arretes
 std::array<int,12> coord_flip(int code);
+//Decode des arretes FL, FR, BR, BL
+std::array<int , 4> slice(int code);
 
 
 
