@@ -34,8 +34,8 @@ int main()
     // view2.drawCube();
 
     CubeState test(
-        {0,1,2,3,4,5,6,7,8,9,10,11},
-        {0,0,0,0,0,0,0,0,0,0,0,0},
+        {4, 1, 2, 5, 0, 7, 3, 6, 8, 9, 10, 11}, // [4, 1, 2, 5, 0, 7, 3, 6, 8, 9, 10, 11]
+        {0,0,0,0,1,0,0,1,0,1,1,0}, // 10010110 -> 150
         {0,1,2,3,4,5,6,7},
         {0, 1, 0, 2, 0, 0, 1, 2}
     );
@@ -52,6 +52,23 @@ int main()
     }
     res += "]";
     std::cout << res << std::endl;
+
+    std::cout << coord_flip(&test) << std::endl ;
+
+    std::array<int, 12> test_2 = coord_flip(150);
+    res = "[";
+    for (auto a : test_2) {
+        res += std::to_string(a);
+        res += ";";
+
+    }
+    res += "]";
+
+    std::cout << res << std::endl;
+
+    std::cout << slice(&test) << std::endl;
+
+
     return 0;
 
 

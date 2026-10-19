@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "../../include/Model/CubeState.h"
+#include "Utility/Utility.h"
 
 
 /*
@@ -25,11 +26,40 @@ int coord_twist(CubeState* cubeState) {
 int coord_flip(CubeState* cubeState) {
     int res = 0;
     int puissance_2 = 1;
-    for (int i = cubeState->rotation_corner.size() - 1; i >= 0; i--) {
-        res += (puissance_2 * cubeState->rotation_corner[i]);
+    for (int i = cubeState->rotation_arrete.size() - 1; i >= 0; i--) {
+        res += (puissance_2 * cubeState->rotation_arrete[i]);
         puissance_2 *= 2;
     }
     return res;
+}
+
+int slice(CubeState* cubeState){
+    int renvoie = 0;
+    std::array<int, 4> retenir = {};
+    std::array<int, 4> valeur_a_rechercher = {4, 5, 6, 7};
+    int j = 0;
+    for (int i = 0; i < cubeState->permutation_arrete.size(); i++) {
+        for (auto recherche : valeur_a_rechercher) {
+            if (recherche == cubeState->permutation_arrete[i]) {
+                retenir[j] = i;
+                j++;
+            }
+        }
+    }
+
+    for (int i = 0; i < retenir.size(); i++) {
+        int k = i + 1;
+        if (retenir[i] >= i+1) {
+            renvoie += (factorielle(retenir[i]) / (factorielle(k) * factorielle(retenir[i] - k)));
+
+        }
+
+
+
+    }
+
+    return renvoie;
+
 }
 
 /*
@@ -57,5 +87,7 @@ std::array<int,12> coord_flip(int code) {
     return rotation_arrete;
 
 }
+
+
 
 
