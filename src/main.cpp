@@ -9,6 +9,7 @@
 #include "Cube/Cube3D.h"
 #include "View/ViewerTerminal.h"
 #include "Utility/Utility.h"
+#include <chrono>
 
 
 
@@ -68,6 +69,39 @@ int main()
 
     std::cout << slice(&test) << std::endl;
 
+    res = "";
+
+    auto debut = std::chrono::high_resolution_clock::now();
+    std::vector<std::vector<int>>  resultat = triangle_pascal(12, 4);
+    auto fin = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double, std::milli> temps_ecoule = fin - debut;
+
+
+    for (auto first : resultat) {
+        res += "[";
+        for (auto second : first) {
+            res += std::to_string(second);
+            res += " - ";
+        }
+        res += "]\n";
+    }
+
+    std::cout << res << std::endl ;
+    std::cout << "Duree fonction triangle pascal = " + std::to_string(temps_ecoule.count()) + " seconde."<< std::endl;
+
+    res = "{";
+
+    std::array<int , 4> caca = slice(48);
+
+    for (auto pipi : caca) {
+        res += std::to_string(pipi);
+        res += " - ";
+    }
+
+    res += " fin }";
+
+    std::cout << res << std::endl;
 
     return 0;
 

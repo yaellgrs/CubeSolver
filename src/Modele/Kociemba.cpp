@@ -10,6 +10,7 @@
  *  CODE
  */
 
+
 int coord_twist(CubeState* cubeState) {
     int res = 0;
     int puissance_3 = 1;
@@ -58,6 +59,19 @@ int slice(CubeState* cubeState){
 
     }
 
+    // POUR DEBUGUER 
+    // std::string debug = "{";
+    //
+    //
+    // for (auto oui : retenir) {
+    //     debug += std::to_string(oui);
+    //     debug += " - ";
+    // }
+    //
+    // debug += "fin}";
+    //
+    // std::cout << debug << std::endl;
+
     return renvoie;
 
 }
@@ -90,10 +104,52 @@ std::array<int,12> coord_flip(int code) {
 
 std::array<int , 4> slice(int code) {
     std::array<int, 4> resultat = {};
+    std::vector<std::vector<int>> triangle =  triangle_pascal(12, 4);
+    int i = 0;
     for (int k = 4; k >= 1; k--) {
-        
+        int start = 0;
+        int end = 12;
+        int mid = (start + end) / 2;
+        while(true) {
+            if (mid < k) {
+                resultat[i] = 0;
+                i++;
+                break ;
+            }
+            if (triangle[mid][k] > code) {
+                end = mid;
+            }
+            if (triangle[mid][k] <= code) {
+                if (mid == 12) {
+                    resultat[i] = mid;
+                    code -= triangle[mid][k];
+                    i++;
+                    break;
+                }
+                if (triangle[mid+1][k] <= code) {
+                    start = mid;
+                } else {
+                    resultat[i] = mid;
+                    code -= triangle[mid][k];
+                    i++;
+                    break;
+
+                }
+
+
+            }
+            mid = (start + end) / 2;
+
+
+
+        }
+
+
     }
+    return resultat;
 }
+
+
 
 
 
