@@ -153,4 +153,3 @@ std::array<int , 4> slice(int code) {
 
 
 
-

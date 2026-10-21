@@ -1,0 +1,154 @@
+// ============================================================
+// 0. IDÉE GÉNÉRALE
+// ============================================================
+// G0 = le cube entier       18 mouvements (U D L R F B, chacun x1, x2, x3)
+// G1 = sous-groupe          10 mouvements : U U2 U' D D2 D' L2 R2 F2 B2
+//
+// Phase 1 : amener le cube de G0 dans G1
+// Phase 2 : résoudre le cube sans jamais sortir de G1
+// Solution = mouvements phase 1 + mouvements phase 2
+//
+// Un cube est dans G1 si et seulement si :
+//   - toutes les orientations de coins valent 0
+//   - toutes les orientations d'arêtes valent 0
+//   - les 4 arêtes de la tranche du milieu (FL, FR, BR, BL) sont dans la tranche
+//     (dans n'importe quel ordre)
+
+
+// ============================================================
+// 1. COORDONNÉES (un état du cube = quelques entiers)
+// ============================================================
+// PHASE 1                                          nb de valeurs
+//   twist : orientation des 8 coins                3^7    = 2 187  (le 8e est déduit)
+//   flip  : orientation des 12 arêtes              2^11   = 2 048  (la 12e est déduite)
+//   slice : emplacements des 4 arêtes de tranche   C(12,4) =   495  (sans leur ordre)
+//   but   : twist = 0, flip = 0, slice = slice_resolu
+//
+// PHASE 2 (valables seulement dans G1)
+//   cp    : permutation des 8 coins                 8! = 40 320
+//   ep8   : permutation des 8 arêtes hors tranche   8! = 40 320
+//   sp    : permutation des 4 arêtes de la tranche  4! =     24
+//   but   : cp = 0, ep8 = 0, sp = 0  (cube résolu)
+
+FONCTION coord_twist(cube)   : lire co[0..6] comme un nombre en base 3
+FONCTION coord_flip(cube)    : lire eo[0..10] comme un nombre en base 2
+FONCTION coord_slice(cube)   : rang de l'ensemble des positions des 4 arêtes de tranche
+                               parmi les 495 combinaisons possibles
+FONCTION coord_perm(tab, n)  : indice de la permutation (code de Lehmer)
+
+
+// ============================================================
+// 2. PRÉCALCUL (une seule fois, au démarrage)
+// ============================================================
+
+// 2.1 Tables de transition : (coordonnée, mouvement) -> nouvelle coordonnée
+POUR CHAQUE coordonnée C dans {twist, flip, slice, cp, ep8, sp}:
+    POUR CHAQUE valeur v de C:
+        cube <- cube_partiel_depuis(C, v)        // reconstruire un cube ayant cette valeur
+        POUR CHAQUE mouvement m utilisable avec C:  // 18 en phase 1, 10 en phase 2
+            table_C[v][m] <- coord_C( appliquer(cube, m) )   // appliquer = ton applyMove
+
+// 2.2 Tables d'élagage : distance minimale jusqu'au but, par BFS depuis le but
+FONCTION construire_elagage(table_A, taille_A, table_B, taille_B, nb_mvts, but_A, but_B):
+    dist[a][b] <- INCONNU pour tout (a, b)
+    dist[but_A][but_B] <- 0
+    file <- [(but_A, but_B)]
+    TANT QUE file non vide:
+        (a, b) <- retirer le premier élément de file
+        POUR m de 0 à nb_mvts - 1:
+            a2 <- table_A[a][m]
+            b2 <- table_B[b][m]
+            SI dist[a2][b2] = INCONNU:
+                dist[a2][b2] <- dist[a][b] + 1
+                ajouter (a2, b2) à file
+    RETOURNER dist
+
+prune_twist_slice <- construire_elagage(table_twist, 2187,  table_slice, 495, 18, 0, slice_resolu)
+prune_flip_slice  <- construire_elagage(table_flip,  2048,  table_slice, 495, 18, 0, slice_resolu)
+prune_cp_sp       <- construire_elagage(table_cp,    40320, table_sp,    24,  10, 0, 0)
+prune_ep8_sp      <- construire_elagage(table_ep8,   40320, table_sp,    24,  10, 0, 0)
+
+// 2.3 Heuristiques (bornes inférieures, donc admissibles pour IDA*)
+FONCTION h1(twist, flip, slice) : RETOURNER max(prune_twist_slice[twist][slice],
+                                                prune_flip_slice[flip][slice])
+FONCTION h2(cp, ep8, sp)        : RETOURNER max(prune_cp_sp[cp][sp],
+                                                prune_ep8_sp[ep8][sp])
+
+// 2.4 Mouvements redondants à ne pas explorer
+FONCTION redondant(m, dernier):
+    SI dernier = AUCUN : RETOURNER FAUX
+    SI face(m) = face(dernier) : RETOURNER VRAI            // ex : U puis U2
+    SI face(m) opposée à face(dernier) ET face(m) < face(dernier) : RETOURNER VRAI
+                                          // on impose un ordre : U avant D, L avant R, F avant B
+    RETOURNER FAUX
+
+
+// ============================================================
+// 3. RECHERCHE
+// ============================================================
+// variables globales : cube_initial, chemin1[], chemin2[], meilleure_solution, borne
+
+// ---------- Phase 1 : IDA* sur (twist, flip, slice) ----------
+FONCTION phase1(twist, flip, slice, g, limite, dernier):
+    h <- h1(twist, flip, slice)
+    SI g + h > limite : RETOURNER               // élagage IDA*
+
+    SI g = limite:
+        // ici h = 0 forcément : on vient d'entrer dans G1
+        SI dernier est un mouvement de G1 : RETOURNER  // sinon doublon avec une phase 1 plus courte
+        essayer_phase2(g)
+        RETOURNER
+
+    POUR CHAQUE mouvement m parmi les 18:
+        SI redondant(m, dernier) : CONTINUER
+        chemin1[g] <- m
+        phase1(table_twist[twist][m], table_flip[flip][m], table_slice[slice][m],
+               g + 1, limite, m)
+
+// ---------- Passage à la phase 2 ----------
+FONCTION essayer_phase2(len1):
+    cube <- cube_initial
+    POUR i de 0 à len1 - 1 : cube <- appliquer(cube, chemin1[i])   // cube est maintenant dans G1
+    cp  <- coord_perm(coins de cube, 8)
+    ep8 <- coord_perm(arêtes de cube hors tranche, 8)
+    sp  <- coord_perm(arêtes de tranche de cube, 4)
+    dernier <- chemin1[len1 - 1] (ou AUCUN si len1 = 0)
+
+    POUR limite2 de 0 à borne - len1:           // approfondissement itératif en phase 2
+        SI phase2(cp, ep8, sp, 0, limite2, dernier) :
+            meilleure_solution <- chemin1[0..len1-1] + chemin2[0..limite2-1]
+            borne <- longueur(meilleure_solution) - 1   // on cherche maintenant plus court
+            RETOURNER
+
+// ---------- Phase 2 : IDA* sur (cp, ep8, sp), 10 mouvements ----------
+FONCTION phase2(cp, ep8, sp, g, limite, dernier):
+    h <- h2(cp, ep8, sp)
+    SI g + h > limite : RETOURNER FAUX
+    SI h = 0 : RETOURNER VRAI                   // cube résolu
+    POUR CHAQUE mouvement m parmi les 10 de G1:
+        SI redondant(m, dernier) : CONTINUER
+        chemin2[g] <- m
+        SI phase2(table_cp[cp][m], table_ep8[ep8][m], table_sp[sp][m],
+                  g + 1, limite, m) :
+            RETOURNER VRAI
+    RETOURNER FAUX
+
+
+// ============================================================
+// 4. PROGRAMME PRINCIPAL
+// ============================================================
+FONCTION resoudre(cube, longueur_max, temps_max):
+    // précondition : le cube est solvable (somme des twists de coins = 0 mod 3,
+    // nombre de flips d'arêtes pair, parités des deux permutations égales)
+    cube_initial <- cube
+    meilleure_solution <- AUCUNE
+    borne <- longueur_max
+    twist, flip, slice <- coord_twist(cube), coord_flip(cube), coord_slice(cube)
+
+    d1 <- 0
+    TANT QUE d1 <= borne:
+        phase1(twist, flip, slice, 0, d1, AUCUN)
+        SI meilleure_solution != AUCUNE ET temps_écoulé > temps_max : ARRÊTER
+        d1 <- d1 + 1
+
+    RETOURNER meilleure_solution

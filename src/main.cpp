@@ -103,6 +103,12 @@ int main()
 
     std::cout << res << std::endl;
 
+    std::array<int, 3> test_code_perm = {2, 1, 0};
+    std::cout << coord_perm(test_code_perm) << std::endl;
+
+    std::array<int, 3> test_code_perm2 = {2, 0, 1};
+    std::cout << coord_perm(test_code_perm2) << std::endl;
+
     return 0;
 
 
