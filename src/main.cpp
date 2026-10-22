@@ -104,10 +104,24 @@ int main()
     std::cout << res << std::endl;
 
     std::array<int, 3> test_code_perm = {2, 1, 0};
-    std::cout << coord_perm(test_code_perm) << std::endl;
+    std::cout << coord_perm<3>(test_code_perm) << std::endl;
 
     std::array<int, 3> test_code_perm2 = {2, 0, 1};
-    std::cout << coord_perm(test_code_perm2) << std::endl;
+    std::cout << coord_perm<3>(test_code_perm2) << std::endl;
+
+    std::array<int, 3> test_code_perm3 = coord_perm<3>(4);
+
+    res = "{";
+
+    for (auto var : test_code_perm3) {
+        res += std::to_string(var);
+        res += " - ";
+
+    }
+
+    res += "fin}";
+
+    std::cout << res << std::endl;
 
     return 0;
 

@@ -6,6 +6,22 @@
 #include "Utility/Utility.h"
 
 
+// ============================================================
+// 1. COORDONNÉES (un état du cube = quelques entiers)
+// ============================================================
+// PHASE 1                                          nb de valeurs
+//   twist : orientation des 8 coins                3^7    = 2 187  (le 8e est déduit)
+//   flip  : orientation des 12 arêtes              2^11   = 2 048  (la 12e est déduite)
+//   slice : emplacements des 4 arêtes de tranche   C(12,4) =   495  (sans leur ordre)
+//   but   : twist = 0, flip = 0, slice = slice_resolu
+//
+// PHASE 2 (valables seulement dans G1)
+//   cp    : permutation des 8 coins                 8! = 40 320
+//   ep8   : permutation des 8 arêtes hors tranche   8! = 40 320
+//   sp    : permutation des 4 arêtes de la tranche  4! =     24
+//   but   : cp = 0, ep8 = 0, sp = 0  (cube résolu)
+
+
 /*
  *  CODE
  */
@@ -148,6 +164,12 @@ std::array<int , 4> slice(int code) {
     }
     return resultat;
 }
+
+
+// ============================================================
+// 2. PRÉCALCUL (une seule fois, au démarrage)
+// ============================================================
+
 
 
 
