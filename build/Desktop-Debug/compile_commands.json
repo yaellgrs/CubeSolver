@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/cube_solver_autogen/include -I/home/nzo/Dev/cpp/CubeSolver/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -DQT_QML_DEBUG -g -std=gnu++20 -fcolor-diagnostics -Wall -Wextra -fPIC -o CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp",
+  "file": "/home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp",
+  "output": "CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o"
+},
+{
+  "directory": "/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug",
   "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/cube_solver_autogen/include -I/home/nzo/Dev/cpp/CubeSolver/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -DQT_QML_DEBUG -g -std=gnu++20 -fcolor-diagnostics -Wall -Wextra -fPIC -o CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp",
   "file": "/home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp",
   "output": "CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o"

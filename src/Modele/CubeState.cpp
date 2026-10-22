@@ -29,4 +29,16 @@ CubeState CubeState::applyMove(Mouvement m) const{
 
 }
 
+void CubeState::Sort(int n){
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> dist(U, F_PRIME);
+
+    for(int i = 0; i < n; i++){
+
+        *this = this->applyMove(static_cast<Mouvement>(dist(gen)));
+    }
+}
+
 

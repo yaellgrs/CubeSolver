@@ -1,8 +1,11 @@
 #pragma once
 #include <array>
 #include <QPainter>
+#include "Model/CubeState.h"
 
 /*     GENERAL     */
+
+extern CubeState resolu;
 
 enum class CubeColor { White, Red, Blue, Orange, Green, Yellow };
 

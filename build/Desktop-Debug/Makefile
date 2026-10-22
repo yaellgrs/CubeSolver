@@ -252,6 +252,30 @@ src/Cube/ICube.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.s
 .PHONY : src/Cube/ICube.cpp.s
 
+src/CubeUtility.o: src/CubeUtility.cpp.o
+.PHONY : src/CubeUtility.o
+
+# target to build an object file
+src/CubeUtility.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o
+.PHONY : src/CubeUtility.cpp.o
+
+src/CubeUtility.i: src/CubeUtility.cpp.i
+.PHONY : src/CubeUtility.i
+
+# target to preprocess a source file
+src/CubeUtility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.i
+.PHONY : src/CubeUtility.cpp.i
+
+src/CubeUtility.s: src/CubeUtility.cpp.s
+.PHONY : src/CubeUtility.s
+
+# target to generate assembly for a file
+src/CubeUtility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube_solver.dir/build.make CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.s
+.PHONY : src/CubeUtility.cpp.s
+
 src/Modele/CubeState.o: src/Modele/CubeState.cpp.o
 .PHONY : src/Modele/CubeState.o
 
@@ -419,6 +443,9 @@ help:
 	@echo "... src/Cube/ICube.o"
 	@echo "... src/Cube/ICube.i"
 	@echo "... src/Cube/ICube.s"
+	@echo "... src/CubeUtility.o"
+	@echo "... src/CubeUtility.i"
+	@echo "... src/CubeUtility.s"
 	@echo "... src/Modele/CubeState.o"
 	@echo "... src/Modele/CubeState.i"
 	@echo "... src/Modele/CubeState.s"

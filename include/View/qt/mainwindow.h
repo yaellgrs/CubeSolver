@@ -9,7 +9,6 @@
 #include "Model/CubeState.h"
 #include "Model/Mouvement.hpp"
 #include "Cube/Cube3D.h"
-
 namespace Ui {
 class MainWindow;
 }

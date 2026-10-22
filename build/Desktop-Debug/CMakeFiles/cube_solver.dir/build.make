@@ -132,10 +132,24 @@ CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.s"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp -o CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.s
 
+CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o: CMakeFiles/cube_solver.dir/flags.make
+CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp
+CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o -MF CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o.d -o CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp
+
+CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp > CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.i
+
+CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp -o CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.s
+
 CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp
 CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o -MF CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o.d -o CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp
 
 CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.i: cmake_force
@@ -149,7 +163,7 @@ CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.s: cmake_force
 CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp
 CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o -MF CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o.d -o CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp
 
 CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.i: cmake_force
@@ -163,7 +177,7 @@ CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.s: cmake_force
 CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp
 CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o -MF CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o.d -o CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp
 
 CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.i: cmake_force
@@ -177,7 +191,7 @@ CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.s: cmake_force
 CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/View/qt/viewerqt.cpp
 CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o -MF CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o.d -o CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/View/qt/viewerqt.cpp
 
 CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.i: cmake_force
@@ -191,7 +205,7 @@ CMakeFiles/cube_solver.dir/src/View/qt/viewerqt.cpp.s: cmake_force
 CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/View/terminal/ViewerTerminal.cpp
 CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o -MF CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o.d -o CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/View/terminal/ViewerTerminal.cpp
 
 CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.i: cmake_force
@@ -205,7 +219,7 @@ CMakeFiles/cube_solver.dir/src/View/terminal/ViewerTerminal.cpp.s: cmake_force
 CMakeFiles/cube_solver.dir/src/main.cpp.o: CMakeFiles/cube_solver.dir/flags.make
 CMakeFiles/cube_solver.dir/src/main.cpp.o: /home/nzo/Dev/cpp/CubeSolver/src/main.cpp
 CMakeFiles/cube_solver.dir/src/main.cpp.o: CMakeFiles/cube_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cube_solver.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cube_solver.dir/src/main.cpp.o"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube_solver.dir/src/main.cpp.o -MF CMakeFiles/cube_solver.dir/src/main.cpp.o.d -o CMakeFiles/cube_solver.dir/src/main.cpp.o -c /home/nzo/Dev/cpp/CubeSolver/src/main.cpp
 
 CMakeFiles/cube_solver.dir/src/main.cpp.i: cmake_force
@@ -222,6 +236,7 @@ cube_solver_OBJECTS = \
 "CMakeFiles/cube_solver.dir/src/Cube/Cube2D.cpp.o" \
 "CMakeFiles/cube_solver.dir/src/Cube/Cube3D.cpp.o" \
 "CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.o" \
+"CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o" \
 "CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o" \
 "CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o" \
 "CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o" \
@@ -236,6 +251,7 @@ cube_solver: CMakeFiles/cube_solver.dir/cube_solver_autogen/mocs_compilation.cpp
 cube_solver: CMakeFiles/cube_solver.dir/src/Cube/Cube2D.cpp.o
 cube_solver: CMakeFiles/cube_solver.dir/src/Cube/Cube3D.cpp.o
 cube_solver: CMakeFiles/cube_solver.dir/src/Cube/ICube.cpp.o
+cube_solver: CMakeFiles/cube_solver.dir/src/CubeUtility.cpp.o
 cube_solver: CMakeFiles/cube_solver.dir/src/Modele/CubeState.cpp.o
 cube_solver: CMakeFiles/cube_solver.dir/src/Modele/Mouvement.cpp.o
 cube_solver: CMakeFiles/cube_solver.dir/src/View/qt/mainwindow.cpp.o
@@ -249,7 +265,7 @@ cube_solver: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 cube_solver: /usr/lib/x86_64-linux-gnu/libGLX.so
 cube_solver: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 cube_solver: CMakeFiles/cube_solver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable cube_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable cube_solver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cube_solver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

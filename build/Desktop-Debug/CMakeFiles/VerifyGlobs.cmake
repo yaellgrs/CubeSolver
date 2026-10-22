@@ -46,6 +46,7 @@ set(OLD_GLOB
   "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube2D.cpp"
   "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube3D.cpp"
   "/home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp"
+  "/home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp"
   "/home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp"
   "/home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp"
   "/home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp"

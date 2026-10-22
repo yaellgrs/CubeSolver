@@ -2,16 +2,15 @@
 /home/nzo/Dev/cpp/CubeSolver/src/main.cpp
 /home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube2D.cpp
 /home/nzo/Dev/cpp/CubeSolver/include/Model/CubeState.h
-/home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube3D.h
-/home/nzo/Dev/cpp/CubeSolver/include/View/qt/viewerqt.h
-/home/nzo/Dev/cpp/CubeSolver/include/CubeUtility.h
 /home/nzo/Dev/cpp/CubeSolver/include/Model/Mouvement.hpp
 /home/nzo/Dev/cpp/CubeSolver/src/View/terminal/ViewerTerminal.cpp
-/home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube2D.h
 /home/nzo/Dev/cpp/CubeSolver/include/Cube/ICube.h
+/home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube2D.h
+/home/nzo/Dev/cpp/CubeSolver/include/View/qt/viewerqt.cpp
+/home/nzo/Dev/cpp/CubeSolver/include/View/IViewer.h
 /home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp
  uic:ui_mainwindow.h
-/home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp
+/home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp
 /home/nzo/Dev/cpp/CubeSolver/include/View/qt/mainwindow.h
  mmc:Q_OBJECT
  mdp:/home/nzo/Dev/cpp/CubeSolver/build/Desktop-Debug/cube_solver_autogen/moc_predefs.h
@@ -175,6 +174,7 @@
  mdp:/usr/include/c++/13/pstl/glue_algorithm_defs.h
  mdp:/usr/include/c++/13/pstl/glue_memory_defs.h
  mdp:/usr/include/c++/13/pstl/glue_numeric_defs.h
+ mdp:/usr/include/c++/13/random
  mdp:/usr/include/c++/13/span
  mdp:/usr/include/c++/13/stdexcept
  mdp:/usr/include/c++/13/streambuf
@@ -443,11 +443,13 @@
  mdp:/usr/lib/llvm-18/lib/clang/18/include/stdarg.h
  mdp:/usr/lib/llvm-18/lib/clang/18/include/stdbool.h
  mdp:/usr/lib/llvm-18/lib/clang/18/include/stddef.h
-/home/nzo/Dev/cpp/CubeSolver/include/Setting.h
+/home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp
 /home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp
+/home/nzo/Dev/cpp/CubeSolver/include/Setting.h
+/home/nzo/Dev/cpp/CubeSolver/include/CubeUtility.h
+/home/nzo/Dev/cpp/CubeSolver/include/View/qt/viewerqt.h
+/home/nzo/Dev/cpp/CubeSolver/include/Cube/Cube3D.h
 /home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube3D.cpp
 /home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp
 /home/nzo/Dev/cpp/CubeSolver/include/View/terminal/ViewerTerminal.h
 /home/nzo/Dev/cpp/CubeSolver/src/View/qt/viewerqt.cpp
-/home/nzo/Dev/cpp/CubeSolver/include/View/qt/viewerqt.cpp
-/home/nzo/Dev/cpp/CubeSolver/include/View/IViewer.h

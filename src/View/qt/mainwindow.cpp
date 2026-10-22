@@ -14,12 +14,6 @@ MainWindow::MainWindow(QWidget *parent)
     // un carré rouge avec contour noir
     ui->Cube->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     this->m_cube = new Cube3D();
-    CubeState resolu(
-        {0,1,2,3,4,5,6,7,8,9,10,11},
-        {0,0,0,0,0,0,0,0,0,0,0,0},
-        {0,1,2,3,4,5,6,7},
-        {0,0,0,0,0,0,0,0}
-        );
 
     this->m_cube->setFromState(resolu);
     drawCube();
@@ -45,6 +39,19 @@ MainWindow::MainWindow(QWidget *parent)
     new QShortcut(QKeySequence(Qt::SHIFT |Qt::Key_R), this, [this] { apply(R2); });
     new QShortcut(QKeySequence(Qt::SHIFT |Qt::Key_B), this, [this] { apply(B2); });
     new QShortcut(QKeySequence(Qt::SHIFT |Qt::Key_F), this, [this] { apply(F2); });
+
+
+    new QShortcut(QKeySequence(Qt::Key_A), this, [this] {
+        for(int i = 0; i < 50; i++){
+            this->m_cube->state->Sort(1);
+            drawCube();
+        }
+
+    });
+    new QShortcut(QKeySequence(Qt::Key_Z), this, [this] {
+        this->m_cube->setFromState(resolu);
+        drawCube();
+    });
 }
 
 void MainWindow::apply(Mouvement m)

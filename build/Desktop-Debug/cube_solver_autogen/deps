@@ -18,6 +18,7 @@ cube_solver_autogen/timestamp: \
 	/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube2D.cpp \
 	/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube3D.cpp \
 	/home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp \
+	/home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp \
 	/home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp \
 	/home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp \
 	/home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp \
@@ -178,6 +179,7 @@ cube_solver_autogen/timestamp: \
 	/usr/include/c++/13/pstl/glue_algorithm_defs.h \
 	/usr/include/c++/13/pstl/glue_memory_defs.h \
 	/usr/include/c++/13/pstl/glue_numeric_defs.h \
+	/usr/include/c++/13/random \
 	/usr/include/c++/13/span \
 	/usr/include/c++/13/stdexcept \
 	/usr/include/c++/13/streambuf \

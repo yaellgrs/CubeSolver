@@ -5,6 +5,7 @@
 #include <vector>
 #include <map>
 #include <array>
+#include <random>
 #include "Mouvement.hpp"
 
 class CubeState{
@@ -23,6 +24,8 @@ class CubeState{
     ~CubeState();
 
     CubeState applyMove(Mouvement m) const;
+
+    void Sort(int n);
 
 
 

@@ -314,6 +314,7 @@
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube2D.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/Cube3D.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Cube/ICube.cpp", "MU", null ],
+		[ "/home/nzo/Dev/cpp/CubeSolver/src/CubeUtility.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Modele/CubeState.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/Modele/Mouvement.cpp", "MU", null ],
 		[ "/home/nzo/Dev/cpp/CubeSolver/src/View/qt/mainwindow.cpp", "MU", null ],

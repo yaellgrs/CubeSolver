@@ -66,9 +66,9 @@ include CMakeFiles/cube_solver_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/cube_solver_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/cube_solver_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 CMakeFiles/cube_solver_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/cube_solver_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/cube_solver_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 cube_solver_autogen_timestamp_deps: CMakeFiles/cube_solver_autogen_timestamp_deps
 cube_solver_autogen_timestamp_deps: CMakeFiles/cube_solver_autogen_timestamp_deps.dir/build.make
